@@ -42,6 +42,7 @@ locals {
     }
 }
 
+/*
 // Check to make sure the highest level module has no remaining values that weren't recursed through
 module "asset_sufficient_levels" {
     source = "../assert"
@@ -51,6 +52,7 @@ module "asset_sufficient_levels" {
         local.modules[length(local.modules) - 1][i].remaining
     ]...) == []
 }
+*/
 
 // Use this  from a DIFFERENT terraform project to generate a new file with a different max depth
 /*
